@@ -3,19 +3,18 @@
 
 int main(int argc, char *argv[])
 {
-    char c;
-    int number=0;
-  
-    printf("input a string: ");
-    //scanf("%s",&c);   이건 왜 안 넣지? 
+    int sum=0;
+    int num;
+    int i;
     
-    while ((c = getchar())!= '\n')
+    printf("input a number: "); 
+    scanf("%d",&num);
+    
+    for (i=0; i<=num; i++)
     {
-          if (c>='0' && c<='9')
-             number++;
-             }
-    
-    printf("digit is %d.\n",number);
+        sum = sum + i;
+        }
+    printf("answer is %d\n",sum);
   
   system("PAUSE");	
   return 0;
