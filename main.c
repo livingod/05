@@ -3,16 +3,19 @@
 
 int main(int argc, char *argv[])
 {
-    int input;
+    char c;
+    int number=0;
+  
+    printf("input a string: ");
+    //scanf("%s",&c);   이건 왜 안 넣지? 
     
-    printf("input an integer: ");
-    scanf("%d",&input);
+    while ((c = getchar())!= '\n')
+    {
+          if (c>='0' && c<='9')
+             number++;
+             }
     
-    if (input>=0)
-       printf("%d\n",input);
-    else printf("%d\n",-input);
-    
-     
+    printf("digit is %d.\n",number);
   
   system("PAUSE");	
   return 0;
