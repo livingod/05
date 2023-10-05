@@ -3,16 +3,15 @@
 
 int main(int argc, char *argv[])
 {
-    int n;
+    int input;
     
     printf("input an integer: ");
-    scanf("%d",&n);
-     
-    if (n>0)
-       printf("positive\n"); 
-    else if (n<0)
-         printf("negative\n");
-    else printf("zero\n"); 
+    scanf("%d",&input);
+    
+    if (input>=0)
+       printf("%d\n",input);
+    else printf("%d\n",-input);
+    
      
   
   system("PAUSE");	
